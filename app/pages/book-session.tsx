@@ -1,0 +1,195 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+
+const BookSession = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    sessionType: 'individual',
+    preferredDate: '',
+    message: ''
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    setSubmitted(true);
+    setIsSubmitting(false);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  if (submitted) {
+    return (
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="min-h-[60vh] flex items-center justify-center"
+      >
+        <div className="text-center p-8">
+          <div className="text-6xl mb-6">🎉</div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Booking Request Sent!</h3>
+          <p className="text-gray-600 mb-8">We'll get back to you within 24 hours to confirm your session.</p>
+          <button
+            onClick={() => setSubmitted(false)}
+            className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-medium hover:bg-yellow-500 transition-colors"
+          >
+            Book Another Session
+          </button>
+        </div>
+      </motion.div>
+    );
+  }
+
+  return (
+    <section className="py-20 bg-gradient-to-b from-black/5 via-white to-white">
+      <div className="container mx-auto px-4 max-w-6xl">
+        {/* Header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <motion.div 
+            className="inline-block mb-6 px-4 py-1.5 rounded-full border border-yellow-400/30 bg-yellow-500/10"
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            whileHover={{ scale: 1.05 }}
+          >
+            <span className="text-yellow-600 font-medium">Book Your Session</span>
+          </motion.div>
+          
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            Start Your <span className="text-yellow-400">Communication Journey</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            Choose your preferred session type and let us help you transform your communication skills.
+          </p>
+        </motion.div>
+
+        {/* Booking Form */}
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-2xl mx-auto bg-white rounded-2xl p-8 shadow-lg"
+          onSubmit={handleSubmit}
+        >
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="name">
+                Full Name
+              </label>
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 outline-none transition-all"
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="email">
+                Email Address
+              </label>
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 outline-none transition-all"
+                placeholder="you@example.com"
+              />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="phone">
+                Phone Number
+              </label>
+              <input
+                required
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 outline-none transition-all"
+                placeholder="Your phone number"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="preferredDate">
+                Preferred Date
+              </label>
+              <input
+                required
+                type="date"
+                id="preferredDate"
+                name="preferredDate"
+                value={formData.preferredDate}
+                onChange={handleChange}
+                min={new Date().toISOString().split('T')[0]}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 outline-none transition-all"
+              />
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700 mb-2" htmlFor="message">
+              Additional Message (Optional)
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows={4}
+              className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-200 outline-none transition-all resize-none"
+              placeholder="Tell us about your goals or any specific requirements..."
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={`w-full py-3 rounded-lg font-medium text-lg transition-all ${
+              isSubmitting
+                ? 'bg-gray-100 text-gray-500 cursor-not-allowed'
+                : 'bg-yellow-400 text-gray-900 hover:bg-yellow-500'
+            }`}
+          >
+            {isSubmitting ? 'Sending...' : 'Book Session'}
+          </button>
+        </motion.form>
+      </div>
+    </section>
+  );
+};
+
+export default BookSession;
