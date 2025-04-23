@@ -1,19 +1,14 @@
 'use client';
 
 import { 
-  FaGraduationCap, 
-  FaFootball, 
-  FaMicrophone, 
-  FaCar, 
   FaRoad, 
   FaFilm, 
-  FaBuilding, 
-  FaAward,
   FaUserTie,
   FaChartLine,
   FaTrophy,
   FaUsers,
-  FaQuoteLeft
+  FaQuoteLeft,
+  FaComments
 } from 'react-icons/fa6';
 import { motion, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
@@ -104,13 +99,23 @@ const AboutSection = () => {
       ]
     },
     {
-      icon: <FaChartLine className="w-8 h-8" />,
-      title: "Business Leadership",
+      icon: <FaComments className="w-8 h-8" />,
+      title: "Communication Coach",
       points: [
-        "Top Real Estate Consultant",
+        "Expert Coaching & Media Training",
+        "One-on-One & Group Sessions",
+        "Public Speaking & Presentation Skills",
+        "25+ Years Experience | Diverse Clientele"
+      ]
+    },
+    {
+      icon: <FaChartLine className="w-8 h-8" />,
+      title: "Business & Social Leadership",
+      points: [
+        "Strategic Advisor to Organizations",
         "NGO Founder - The Traffic People Foundation",
-        "Strategic Advisor to Leading Organizations",
-        "Public Safety Advocate"
+        "Public Safety Advocate & Road Safety Education",
+        "Impactful Community Initiatives"
       ]
     }
   ];
@@ -196,35 +201,94 @@ const AboutSection = () => {
           className="mb-20 rounded-2xl p-8 bg-gradient-to-br from-gray-50 to-yellow-50/50 border border-yellow-100"
           {...scaleIn}
         >
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-400 to-yellow-500">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8 backdrop-blur-sm bg-white/10">
-                  <div className="w-36 h-36 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-white/30">
-                    <span className="text-5xl font-bold text-white">SS</span>
+          <div className="space-y-12">
+            {/* First Row - Bio and Image */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1">
+                <div className="text-yellow-500 mb-6">
+                  <FaQuoteLeft className="w-10 h-10 opacity-30" />
+                </div>
+                <div className="space-y-4 text-gray-600">
+                  <p className="text-lg">
+                    An Economics Graduate from the prestigious Hansraj College, Delhi University, Shailesh Sinha has carved a unique path combining his passion for communication, traffic management, and social impact.
+                  </p>
+                  <p className="text-lg">
+                    Known as the "Traffic Guru of India," he pioneered the Traffic News System in India and has been a prominent voice in road safety for over 24 years. His innovative approach to traffic management and road safety has earned him recognition across national media channels.
+                  </p>
+                  <p className="text-lg">
+                    Beyond his professional achievements, Shailesh is a multifaceted personality excelling in sports as a National Level Cricketer and Maruti Suzuki Autocross Car Racing National Champion. His entertainment career includes notable roles in regional films alongside Manoj Tiwari Ji.
+                  </p>
+                </div>
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-400 to-yellow-500 order-1 md:order-2">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center p-8 backdrop-blur-sm bg-white/10">
+                    <div className="w-36 h-36 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-white/30">
+                      <span className="text-5xl font-bold text-white">SS</span>
+                    </div>
+                    <h4 className="text-2xl font-semibold text-white">Shailesh Sinha</h4>
+                    <p className="text-yellow-100 mt-2">Traffic Guru of India</p>
                   </div>
-                  <h4 className="text-2xl font-semibold text-white">Shailesh Sinha</h4>
-                  <p className="text-yellow-100 mt-2">Traffic Guru of India</p>
                 </div>
               </div>
             </div>
-            <div>
-              <div className="text-yellow-500 mb-6">
-                <FaQuoteLeft className="w-10 h-10 opacity-30" />
+
+            {/* Second Row - Professional Excellence and Media Background */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-gradient-to-br from-yellow-50 to-white rounded-2xl p-8 border border-yellow-100">
+                <h4 className="text-2xl font-semibold text-gray-900 mb-6">Professional Excellence</h4>
+                <p className="text-lg text-gray-600 mb-8">
+                  With over 25 years of experience in the field of communication, working with Top Media Houses like The Times Of India, TV Today Group, Aajtak, Mid Day Multimedia and many more, Shailesh Sinha has established himself as a trusted expert in helping individuals and organizations achieve their goals through effective communication and presentation.
+                </p>
+                <div className="space-y-6">
+                  <div className="bg-white/80 p-6 rounded-xl border border-yellow-100 shadow-sm hover:shadow-md transition-shadow">
+                    <h5 className="text-yellow-600 font-semibold mb-4 text-lg">Expertise & Services</h5>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <span className="text-yellow-500 mr-2">•</span>
+                        <span>Communication Coaching & Media Training</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-yellow-500 mr-2">•</span>
+                        <span>One-on-One & Group Training Sessions</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-yellow-500 mr-2">•</span>
+                        <span>Media Interview Preparation</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-yellow-500 mr-2">•</span>
+                        <span>Public Speaking & Presentation Skills</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div className="space-y-4 text-gray-600">
                 <p className="text-lg">
-                  An Economics Graduate from the prestigious Hansraj College, Delhi University, Shailesh Sinha has carved a unique path combining his passion for communication, traffic management, and social impact.
+                  A Thorough Media Professional, providing his services to Top Media Channels and Houses as a Consultant and Speaker on Various National Issues for the last 18+ years. His Social Initiative in the Field of Road Safety is also impacting India positively through meaningful presentations and deep communication.
                 </p>
-                <p className="text-lg">
-                  Known as the "Traffic Guru of India," he pioneered the Traffic News System in India and has been a prominent voice in road safety for over 24 years. His innovative approach to traffic management and road safety has earned him recognition across national media channels.
-                </p>
-                <p className="text-lg">
-                  Beyond his professional achievements, Shailesh is a multifaceted personality excelling in sports as a National Level Cricketer and Maruti Suzuki Autocross Car Racing National Champion. His entertainment career includes notable roles in regional films alongside Manoj Tiwari Ji.
-                </p>
-                <p className="text-lg">
-                  Currently serving as a top-level Real Estate Consultant, he continues to make significant contributions to society through "The Traffic People Foundation," his NGO dedicated to road safety education.
-                </p>
+                <div className="bg-white/80 p-6 rounded-xl border border-yellow-100 shadow-sm hover:shadow-md transition-shadow mt-8">
+                  <h5 className="text-yellow-600 font-semibold mb-4 text-lg">Key Strengths</h5>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <span className="text-yellow-500 mr-2">•</span>
+                      <span>25+ Years of Industry Experience</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-yellow-500 mr-2">•</span>
+                      <span>Diverse Corporate & Government Clientele</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-yellow-500 mr-2">•</span>
+                      <span>Expert in Communication Strategies</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-yellow-500 mr-2">•</span>
+                      <span>Proven Track Record of Success</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -260,14 +324,21 @@ const AboutSection = () => {
             </div>
             <h3 className="text-3xl font-bold text-gray-900">Areas of Expertise</h3>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {expertise.map((area, index) => (
-              <div key={index} className="group bg-gradient-to-br from-gray-50 to-yellow-50/50 rounded-2xl p-8 border border-yellow-100 hover:border-yellow-300 transition-all">
+              <motion.div
+                key={index} 
+                className="group bg-gradient-to-br from-gray-50 to-yellow-50/50 rounded-2xl p-8 border border-yellow-100 hover:border-yellow-300 transition-all hover:shadow-md"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+              >
                 <div className="flex items-center mb-6">
                   <div className="text-yellow-500 mr-4 group-hover:scale-110 transition-transform">
                     {area.icon}
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-900">{area.title}</h4>
+                  <h4 className="text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors">{area.title}</h4>
                 </div>
                 <ul className="space-y-3">
                   {area.points.map((point, idx) => (
@@ -277,7 +348,7 @@ const AboutSection = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             ))}
           </div>
         </motion.div>

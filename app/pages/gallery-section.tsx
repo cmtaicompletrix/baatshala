@@ -10,22 +10,22 @@ export default function Gallery() {
 
   const photos = [
     {
-      src: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Speaking+Event',
+      src: '/images/Image1.jpeg',
       alt: 'Shailesh Sinha Speaking at Conference',
-      caption: 'Speaking at Communication Summit 2023'
+      caption: 'Speaking at Communication Summit'
     },
     {
-      src: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Workshop+Session',
+      src: '/images/Image2.jpeg',
       alt: 'Workshop Session',
       caption: 'Interactive Workshop with Students'
     },
     {
-      src: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Corporate+Training',
+      src: '/images/Image3.jpeg',
       alt: 'Corporate Training',
       caption: 'Corporate Communication Training'
     },
     {
-      src: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Media+Interview',
+      src: '/images/Image4.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },
@@ -42,26 +42,154 @@ export default function Gallery() {
   ];
 
   const videos = [
+    // YouTube Videos
     {
-      thumbnail: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Public+Speaking+Video',
-      title: 'Master the Art of Public Speaking',
-      youtubeId: 'dQw4w9WgXcQ',
-      duration: '15:24',
-      link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/jYcn7zVdPMg/maxresdefault.jpg',
+      title: 'Traffic Management Tips',
+      videoId: 'jYcn7zVdPMg',
+      link: 'https://youtu.be/jYcn7zVdPMg'
     },
     {
-      thumbnail: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Communication+Skills+Video',
-      title: 'Communication Skills for Success',
-      youtubeId: 'jNQXAC9IVRw',
-      duration: '12:45',
-      link: 'https://www.youtube.com/watch?v=jNQXAC9IVRw'
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/ERBQJGAbUF8/maxresdefault.jpg',
+      title: 'Road Safety Awareness',
+      videoId: 'ERBQJGAbUF8',
+      link: 'https://youtu.be/ERBQJGAbUF8'
     },
     {
-      thumbnail: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Body+Language+Video',
-      title: 'Body Language Secrets',
-      youtubeId: 'Y8Wp3dafaMQ',
-      duration: '18:30',
-      link: 'https://www.youtube.com/watch?v=Y8Wp3dafaMQ'
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/xHIJuk4Zbsc/maxresdefault.jpg',
+      title: 'Traffic Solutions',
+      videoId: 'xHIJuk4Zbsc',
+      link: 'https://youtu.be/xHIJuk4Zbsc'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/lKPo784qviI/maxresdefault.jpg',
+      title: 'Traffic Expert Interview',
+      videoId: 'lKPo784qviI',
+      link: 'https://youtu.be/lKPo784qviI'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/NlVdpxSqz2I/maxresdefault.jpg',
+      title: 'Traffic Management Insights',
+      videoId: 'NlVdpxSqz2I',
+      link: 'https://www.youtube.com/watch?v=NlVdpxSqz2I'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/b-_7-yky5pw/maxresdefault.jpg',
+      title: 'Road Safety Discussion',
+      videoId: 'b-_7-yky5pw',
+      link: 'https://www.youtube.com/watch?v=b-_7-yky5pw'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/N7svXcggZ6w/maxresdefault.jpg',
+      title: 'Traffic Solutions Expert',
+      videoId: 'N7svXcggZ6w',
+      link: 'https://youtu.be/N7svXcggZ6w'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/cxjBnJ0c4x4/maxresdefault.jpg',
+      title: 'Media Appearance',
+      videoId: 'cxjBnJ0c4x4',
+      link: 'https://youtu.be/cxjBnJ0c4x4'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/7dwWQdL69Sw/maxresdefault.jpg',
+      title: 'Traffic Management Session',
+      videoId: '7dwWQdL69Sw',
+      link: 'https://youtu.be/7dwWQdL69Sw'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/IUKhvioxVyA/maxresdefault.jpg',
+      title: 'Expert Talk',
+      videoId: 'IUKhvioxVyA',
+      link: 'https://youtu.be/IUKhvioxVyA'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/L9uMG7FO0_A/maxresdefault.jpg',
+      title: 'Traffic Safety Tips',
+      videoId: 'L9uMG7FO0_A',
+      link: 'https://youtu.be/L9uMG7FO0_A'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/4_DJ5-sNkGc/maxresdefault.jpg',
+      title: 'Road Safety Expert',
+      videoId: '4_DJ5-sNkGc',
+      link: 'https://youtu.be/4_DJ5-sNkGc'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/HavI_sa5ZY8/maxresdefault.jpg',
+      title: 'Traffic Management Expertise',
+      videoId: 'HavI_sa5ZY8',
+      link: 'https://youtu.be/HavI_sa5ZY8'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/W8ej6DmMG3w/maxresdefault.jpg',
+      title: 'Traffic Safety Interview',
+      videoId: 'W8ej6DmMG3w',
+      link: 'https://youtu.be/W8ej6DmMG3w'
+    },
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/k0IFuuSy7c8/maxresdefault.jpg',
+      title: 'Road Safety Discussion',
+      videoId: 'k0IFuuSy7c8',
+      link: 'https://youtu.be/k0IFuuSy7c8'
+    },
+    // Local Videos
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Traffic Management Expertise',
+      src: '/videos/Video1.mp4'
+    },
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Road Safety Initiatives',
+      src: '/videos/Video2.mp4'
+    },
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Public Safety Awareness',
+      src: '/videos/Video3.mp4'
+    },
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Traffic Solutions Implementation',
+      src: '/videos/Video4.mp4'
+    },
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Community Safety Programs',
+      src: '/videos/Video5.mp4'
+    },
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Road Safety Education',
+      src: '/videos/Video6.mp4'
+    },
+    {
+      type: 'local',
+      thumbnail: '/images/video-thumb.jpg',
+      title: 'Traffic Management Solutions',
+      src: '/videos/Video7.mp4'
     }
   ];
 
@@ -175,25 +303,40 @@ export default function Gallery() {
                 key={index}
                 variants={itemVariants}
                 className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                onClick={() => window.open(video.link, '_blank')}
               >
                 <div className="aspect-w-16 aspect-h-9 relative h-[250px]">
-                  <Image
-                    src={video.thumbnail}
-                    alt={video.title}
-                    fill
-                    className="object-cover"
-                    unoptimized
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <FaYoutube className="w-16 h-16 text-red-600 opacity-90 group-hover:scale-110 transition-transform duration-300" />
+                  {video.type === 'youtube' ? (
+                    <>
+                      <Image
+                        src={video.thumbnail}
+                        alt={video.title}
+                        fill
+                        className="object-cover"
+                        unoptimized
+                        onClick={() => window.open(video.link, '_blank')}
+                      />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <FaYoutube className="w-16 h-16 text-red-600 opacity-90 group-hover:scale-110 transition-transform duration-300" />
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="w-full h-full relative group">
+                      <video
+                        src={video.src}
+                        className="w-full h-full object-cover cursor-pointer hover:controls-visible"
+                        controls
+                        preload="metadata"
+                        playsInline
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent pointer-events-none z-10">
+                        <h3 className="text-white text-lg font-medium mb-1">{video.title}</h3>
+                      </div>
                     </div>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-                    <h3 className="text-white text-lg font-medium mb-1">{video.title}</h3>
-                    <p className="text-white/80 text-sm">{video.duration}</p>
-                  </div>
+                  )}
                 </div>
               </motion.div>
             ))}
