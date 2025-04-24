@@ -210,16 +210,12 @@ const AboutSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-400 to-yellow-500 order-1 md:order-2">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8 backdrop-blur-sm bg-white/10">
-                    <div className="w-36 h-36 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-white/30">
-                      <span className="text-5xl font-bold text-white">SS</span>
-                    </div>
-                    <h4 className="text-2xl font-semibold text-white">Shailesh Sinha</h4>
-                    <p className="text-yellow-100 mt-2">Traffic Guru of India</p>
-                  </div>
-                </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br backgroundI order-1 md:order-2">
+                <img 
+                  src="/images/ImageMain.jpg"
+                  alt="Shailesh Sinha"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

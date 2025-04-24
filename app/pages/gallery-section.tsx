@@ -108,11 +108,88 @@ export default function Gallery() {
       src: '/images/Image20.jpg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
-    }
+    },
+    {
+      src: '/images/Image21.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image22.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image23.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image24.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image25.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image26.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image27.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image31.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image32.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image33.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image34.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image28.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image35.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image30.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
   ];
 
   const videos = [
     // YouTube Videos
+    {
+      type: 'youtube',
+      thumbnail: 'https://img.youtube.com/vi/taWHxDGQ0sc/maxresdefault.jpg',
+      title: 'Traffic Expert of India',
+      videoId: 'taWHxDGQ0sc',
+      link: 'https://youtu.be/taWHxDGQ0sc'
+    },
     {
       type: 'youtube',
       thumbnail: 'https://img.youtube.com/vi/jYcn7zVdPMg/maxresdefault.jpg',
