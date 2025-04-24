@@ -228,12 +228,6 @@ export default function Gallery() {
     {
       type: 'local',
       thumbnail: '/images/video-thumb.jpg',
-      title: 'Road Safety Initiatives',
-      src: '/videos/Video2.mp4'
-    },
-    {
-      type: 'local',
-      thumbnail: '/images/video-thumb.jpg',
       title: 'Public Safety Awareness',
       src: '/videos/Video3.mp4'
     },
@@ -248,12 +242,6 @@ export default function Gallery() {
       thumbnail: '/images/video-thumb.jpg',
       title: 'Community Safety Programs',
       src: '/videos/Video5.mp4'
-    },
-    {
-      type: 'local',
-      thumbnail: '/images/video-thumb.jpg',
-      title: 'Road Safety Education',
-      src: '/videos/Video6.mp4'
     },
     {
       type: 'local',

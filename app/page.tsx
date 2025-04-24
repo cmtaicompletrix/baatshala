@@ -25,14 +25,14 @@ export default function Home() {
           <Gallery />
         </section>
 
-        {/* Impact Section */}
-        <section id="impact">
-          <ImpactSection />
-        </section>
-
         {/* Barriers Section */}
         <section id="barriers">
           <BarriersSection />
+        </section>
+
+        {/* Impact Section */}
+        <section id="impact">
+          <ImpactSection />
         </section>
 
         {/* Power Section */}

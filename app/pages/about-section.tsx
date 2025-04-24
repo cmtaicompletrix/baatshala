@@ -56,22 +56,22 @@ const CountingNumber = ({ value, duration = 2000 }: CountingNumberProps) => {
 const AboutSection = () => {
   const keyAchievements = [
     {
-      number: "24+",
+      number: "25+",
       label: "Years Experience",
       description: "In Traffic Management"
     },
     {
-      number: "1000+",
+      number: "1200+",
       label: "Media Appearances",
       description: "As Traffic Expert"
     },
     {
-      number: "100+",
+      number: "118+",
       label: "Projects Completed",
       description: "Across Industries"
     },
     {
-      number: "50+",
+      number: "58+",
       label: "Awards Received",
       description: "For Excellence"
     }
@@ -79,23 +79,12 @@ const AboutSection = () => {
 
   const expertise = [
     {
-      icon: <FaRoad className="w-8 h-8" />,
-      title: "Traffic Management Expert",
-      points: [
-        "Pioneer of Traffic News System in India",
-        "Featured on National News Channels since 2008",
-        "24+ Years of Road Safety Experience",
-        "Trusted Traffic Advisor to Government Bodies"
-      ]
-    },
-    {
       icon: <FaUserTie className="w-8 h-8" />,
       title: "Media Professional",
       points: [
         "Radio Jockey & Voice Over Artist",
-        "Worked with Times of India, Mid Day Mumbai",
-        "Regular Appearances on Aajtak",
-        "Host at Red FM"
+        "Regular Appearances on Aajtak, NDTV, CNN News 18, Zee News, Republic TV, News 24, Times Now, India TV, ABP News, etc.",
+        "Consultant & Speaker on National Issues"
       ]
     },
     {
@@ -114,7 +103,7 @@ const AboutSection = () => {
       points: [
         "Strategic Advisor to Organizations",
         "NGO Founder - The Traffic People Foundation",
-        "Public Safety Advocate & Road Safety Education",
+        "Public Orientation Advocate & Road Safety Education",
         "Impactful Community Initiatives"
       ]
     }
@@ -126,8 +115,8 @@ const AboutSection = () => {
       icon: <FaTrophy className="w-6 h-6" />,
       items: [
         "National Level Cricketer - Delhi Under 16 & 19",
-        "Celebrity Cricket League Player - Bhojpuri Dabanggs",
-        "Maruti Suzuki Autocross Racing Champion 2007-8"
+        "Celebrity Cricket League (2014) Player - Bhojpuri Dabanggs owned by Salman Khan",
+        "Maruti Suzuki Autocross National Racing Champion 2007-8"
       ]
     },
     {
@@ -135,7 +124,7 @@ const AboutSection = () => {
       icon: <FaFilm className="w-6 h-6" />,
       items: [
         "Lead Actor in Regional Films",
-        "Parallel Lead with Manoj Tiwari Ji",
+        "Parallel Lead with Manoj Tiwari Ji, Ravi Kishan Ji, Kesari Lal Yadav Ji, and many more",
         "Television Host and Presenter"
       ]
     },
@@ -145,7 +134,8 @@ const AboutSection = () => {
       items: [
         "Road Safety Education Programs",
         "Traffic Awareness Campaigns",
-        "Community Safety Initiatives"
+        "Community Safety Initiatives",
+        "Environmental Conservation Initiatives"
       ]
     }
   ];
@@ -213,7 +203,7 @@ const AboutSection = () => {
                     An Economics Graduate from the prestigious Hansraj College, Delhi University, Shailesh Sinha has carved a unique path combining his passion for communication, traffic management, and social impact.
                   </p>
                   <p className="text-lg">
-                    Known as the "Traffic Guru of India," he pioneered the Traffic News System in India and has been a prominent voice in road safety for over 24 years. His innovative approach to traffic management and road safety has earned him recognition across national media channels.
+                    Known as the "Traffic Guru," he pioneered the Traffic News System in India and has been a prominent voice in road safety for over 24 years. His innovative approach to traffic management and road safety has earned him recognition across national media channels and many other platforms.
                   </p>
                   <p className="text-lg">
                     Beyond his professional achievements, Shailesh is a multifaceted personality excelling in sports as a National Level Cricketer and Maruti Suzuki Autocross Car Racing National Champion. His entertainment career includes notable roles in regional films alongside Manoj Tiwari Ji.
@@ -266,7 +256,7 @@ const AboutSection = () => {
               </div>
               <div className="space-y-4 text-gray-600">
                 <p className="text-lg">
-                  A Thorough Media Professional, providing his services to Top Media Channels and Houses as a Consultant and Speaker on Various National Issues for the last 18+ years. His Social Initiative in the Field of Road Safety is also impacting India positively through meaningful presentations and deep communication.
+                  A Thorough Media Professional, providing his services to Top Media Channels and Houses as a Consultant and Speaker on Various National Issues for the last 18+ years. His Professional Career in the Field of Road Safety & social welfare is also impacting India positively through meaningful presentations and deep communication.
                 </p>
                 <div className="bg-white/80 p-6 rounded-xl border border-yellow-100 shadow-sm hover:shadow-md transition-shadow mt-8">
                   <h5 className="text-yellow-600 font-semibold mb-4 text-lg">Key Strengths</h5>
@@ -324,11 +314,11 @@ const AboutSection = () => {
             </div>
             <h3 className="text-3xl font-bold text-gray-900">Areas of Expertise</h3>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {expertise.map((area, index) => (
               <motion.div
                 key={index} 
-                className="group bg-gradient-to-br from-gray-50 to-yellow-50/50 rounded-2xl p-8 border border-yellow-100 hover:border-yellow-300 transition-all hover:shadow-md"
+                className="group bg-gradient-to-br from-gray-50 to-yellow-50/50 rounded-2xl p-8 border border-yellow-100 hover:border-yellow-300 transition-all hover:shadow-md h-full"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
