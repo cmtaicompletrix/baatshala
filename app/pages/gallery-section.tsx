@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaYoutube, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 
 export default function Gallery() {
   const [currentTab, setCurrentTab] = useState('photos');
@@ -30,14 +30,84 @@ export default function Gallery() {
       caption: 'Media Interaction Session'
     },
     {
-      src: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Award+Ceremony',
+      src: '/images/Image5.jpg',
       alt: 'Award Ceremony',
       caption: 'Receiving Excellence Award'
     },
     {
-      src: 'https://dummyimage.com/600x400/ffd700/ffffff.jpg&text=Mentoring',
+      src: '/images/Image6.jpg',
       alt: 'Mentoring Session',
       caption: 'One-on-One Mentoring'
+    },
+    {
+      src: '/images/Image7.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image8.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image9.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image10.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image11.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image12.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image13.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image14.jpg', 
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image15.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image16.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image17.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image18.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image19.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image20.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
     }
   ];
 
@@ -270,21 +340,17 @@ export default function Gallery() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="group relative overflow-hidden rounded-xl shadow-lg"
+                className="group relative overflow-hidden rounded-xl shadow-lg h-full"
               >
-                <div className="aspect-w-16 aspect-h-9 relative h-[250px]">
+                <div className="relative w-full h-full">
                   <Image
                     src={photo.src}
                     alt={photo.alt}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     unoptimized
                   />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <p className="text-white text-lg font-medium">{photo.caption}</p>
-                  </div>
                 </div>
               </motion.div>
             ))}

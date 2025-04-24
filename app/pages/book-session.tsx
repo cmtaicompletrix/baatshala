@@ -19,6 +19,8 @@ const BookSession = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    console.log(formData);
     
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1500));
