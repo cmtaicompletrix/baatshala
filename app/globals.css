@@ -30,6 +30,12 @@ body {
   * {
     @apply border-[#e5e7eb];
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-base text-gray-700 bg-white;
+  }
 }
 
 @theme inline {
@@ -96,10 +102,37 @@ body {
 
 .smooth-scroll {
   display: flex;
-  animation: smooth-scroll 35s linear infinite;
+  animation: scroll 40s linear infinite;
   width: max-content;
 }
 
 .smooth-scroll:hover {
   animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Adjust video controls visibility */
+video.hover\:controls-visible:hover::-\-webkit-media-controls {
+  display: block;
+}
+
+video.hover\:controls-visible::-\-webkit-media-controls {
+  display: none;
+}
+
+/* For Firefox */
+video.hover\:controls-visible:hover {
+  controls: true;
+}
+
+video.hover\:controls-visible {
+  controls: none;
 }

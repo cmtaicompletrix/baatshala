@@ -5,45 +5,52 @@ import { motion } from 'framer-motion';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart",
-      image: "https://randomuser.me/api/portraits/women/1.jpg",
-      content: "The communication training transformed our team dynamics. We've seen a 40% increase in project completion rates.",
+      name: "Pawan Singh Ji",
+      role: "Superstar, Bhojpuri Cinema",
+      image: "/images/test1.jpeg",
+      content: "Rarely do you come across someone who works with such honesty and dedication. Truly impressive.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      role: "Team Lead, InnovateCo",
-      image: "https://randomuser.me/api/portraits/men/2.jpg",
-      content: "Incredible impact on our client relationships. The strategies are practical and effective.",
+      name: "Khesari Lal Yadav Ji",
+      role: "Singer & Actor",
+      image: "/images/test2.jpg",
+      content: "The kind of innovative thinking here is absolutely next level. Everything feels fresh and well-thought-out.",
       rating: 5
     },
     {
-      name: "Emma Davis",
-      role: "HR Director, GlobalCorp",
-      image: "https://randomuser.me/api/portraits/women/3.jpg",
-      content: "Best investment in our team's development. The results were immediate and lasting.",
+      name: "Dinesh Lal Yadav 'Nirahua' Ji",
+      role: "Actor & MP",
+      image: "/images/test3.jpg",
+      content: "When you see the level of effort and detail, you just know something big is being built.",
       rating: 5
     },
     {
-      name: "James Wilson",
-      role: "Marketing Manager",
-      image: "https://randomuser.me/api/portraits/men/4.jpg",
-      content: "The communication framework has revolutionized how we approach client presentations.",
+      name: "Ravi Kishan Ji",
+      role: "Actor & Politician",
+      image: "/images/test4.jpg",
+      content: "Honesty, hard work, and vision – it's a rare combination, and it's all here.",
       rating: 5
     },
     {
-      name: "Lisa Zhang",
-      role: "Product Owner",
-      image: "https://randomuser.me/api/portraits/women/5.jpg",
-      content: "Our team collaboration improved dramatically after implementing these techniques.",
+      name: "Manoj Tiwari Ji",
+      role: "Singer & Politician",
+      image: "/images/test5.jpg",
+      content: "Feels less like a professional connection and more like working with family. That's the vibe.",
       rating: 5
     },
     {
-      name: "David Brown",
-      role: "Sales Director",
-      image: "https://randomuser.me/api/portraits/men/6.jpg",
-      content: "The ROI on this training has been exceptional. Our sales team's performance is up 45%.",
+      name: "Ritesh Pandey Ji",
+      role: "Playback Singer",
+      image: "/images/test6.jpg",
+      content: "You can tell it's done with heart. There's a special kind of warmth in everything here.",
+      rating: 5
+    },
+    {
+      name: "Pradeep Pandey 'Chintu' Ji",
+      role: "Actor",
+      image: "/images/test7.jpg",
+      content: "There's a perfect balance in everything—timing, quality, and professionalism. Really admirable.",
       rating: 5
     }
   ];
@@ -119,4 +126,59 @@ const TestimonialsSection = () => {
   );
 };
 
-export default TestimonialsSection; 
+const MediaLogos = () => {
+  const logos = [
+    { src: '/images/media1.jpeg', alt: 'Media Partner 1' }, // Assuming media1 is jpeg
+    { src: '/images/media2.jpeg', alt: 'Media Partner 2' },
+    { src: '/images/media3.jpeg', alt: 'Media Partner 3' },
+    { src: '/images/media4.jpeg', alt: 'Media Partner 4' },
+    { src: '/images/media5.png', alt: 'Media Partner 5' },
+    { src: '/images/media6.jpg', alt: 'Media Partner 6' },
+    { src: '/images/media7.png', alt: 'Media Partner 7' },
+    { src: '/images/media8.png', alt: 'Media Partner 8' },
+    { src: '/images/media9.jpg', alt: 'Media Partner 9' },
+    { src: '/images/media10.png', alt: 'Media Partner 10' },
+    { src: '/images/media11.webp', alt: 'Media Partner 11' },
+    { src: '/images/media12.png', alt: 'Media Partner 12' },
+    { src: '/images/media13.png', alt: 'Media Partner 13' },
+    { src: '/images/media14.jpg', alt: 'Media Partner 14' },
+    
+  ];
+
+  return (
+    <div className="py-12 bg-white">
+      <div className="container mx-auto px-4">
+        <h3 className="text-center text-2xl font-semibold text-gray-700 mb-4">
+          As Featured On
+        </h3>
+        <p className="text-center text-gray-600 text-lg mb-10">
+          Recognized by leading national media outlets for insights and expertise.
+        </p>
+        <div className="relative overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {[...logos, ...logos].map((logo, index) => (
+              <div key={index} className="mx-8 flex-shrink-0">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="h-12 md:h-16 object-contain transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const CombinedSection = () => {
+  return (
+    <>
+      <MediaLogos />
+      <TestimonialsSection />
+    </>
+  );
+}
+
+export default CombinedSection; 
