@@ -58,12 +58,12 @@ const AboutSection = () => {
     {
       number: "25+",
       label: "Years Experience",
-      description: "In Traffic Management"
+      description: "As a Media Professional"
     },
     {
       number: "1200+",
       label: "Media Appearances",
-      description: "As Traffic Expert"
+      description: "Debator & Speaker"
     },
     {
       number: "118+",
