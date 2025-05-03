@@ -7,7 +7,7 @@ import MagicSection from './pages/magic-section';
 import TestimonialsSection from './pages/testimonials-section';
 import BookSession from './pages/book-session';
 import Gallery from './pages/gallery-section';
-
+import BenefitSection from './pages/benefit-section';
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -28,6 +28,11 @@ export default function Home() {
         {/* Barriers Section */}
         <section id="barriers">
           <BarriersSection />
+        </section>
+
+        {/* Benefits Section */}
+        <section id="benefits">
+          <BenefitSection />
         </section>
 
         {/* Impact Section */}

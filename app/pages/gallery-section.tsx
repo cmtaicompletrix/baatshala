@@ -179,6 +179,51 @@ export default function Gallery() {
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },
+    {
+      src: '/images/Image36.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },  
+    {
+      src: '/images/Image37.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },  
+    {
+      src: '/images/Image38.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },  
+    {
+      src: '/images/Image39.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },    
+    {
+      src: '/images/Image43.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },    
+    {
+      src: '/images/Image41.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },      
+    {
+      src: '/images/Image42.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },      
+    {
+      src: '/images/Image40.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },        
+    {
+      src: '/images/Image44.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    }     
   ];
 
   const videos = [
