@@ -5,55 +5,76 @@ import { motion } from 'framer-motion';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Pawan Singh Ji",
+      name: "Pawan Singh",
       role: "Superstar, Bhojpuri Cinema",
       image: "/images/test1.jpeg",
-      content: "Rarely do you come across someone who works with such honesty and dedication. Truly impressive.",
+      content: "The professionalism and sincerity I've seen here is unmatched. It's rare to witness such clarity in execution.",
       rating: 5
     },
     {
-      name: "Khesari Lal Yadav Ji",
+      name: "Khesari Lal Yadav",
       role: "Singer & Actor",
       image: "/images/test2.jpg",
-      content: "The kind of innovative thinking here is absolutely next level. Everything feels fresh and well-thought-out.",
+      content: "This platform brings a new kind of energy to the rental scene. It's bold, fresh, and exactly what people need.",
       rating: 5
     },
     {
-      name: "Dinesh Lal Yadav 'Nirahua' Ji",
+      name: "Dinesh Lal Yadav 'Nirahua",
       role: "Actor & MP",
       image: "/images/test3.jpg",
-      content: "When you see the level of effort and detail, you just know something big is being built.",
+      content: "From design to delivery, every detail has been thought through. You can feel the mission behind it.",
       rating: 5
     },
     {
-      name: "Ravi Kishan Ji",
+      name: "Ravi Kishan",
       role: "Actor & Politician",
       image: "/images/test4.jpg",
-      content: "Honesty, hard work, and vision – it's a rare combination, and it's all here.",
+      content: "Rarely do you see such purpose-driven execution. This is more than a project—it's a movement.",
       rating: 5
     },
     {
-      name: "Manoj Tiwari Ji",
+      name: "Manoj Tiwari",
       role: "Singer & Politician",
       image: "/images/test5.jpg",
-      content: "Feels less like a professional connection and more like working with family. That's the vibe.",
+      content: "The sense of belonging and trust it builds is something special. You feel valued instantly.",
       rating: 5
     },
     {
-      name: "Ritesh Pandey Ji",
-      role: "Playback Singer",
+      name: "Gagan Malik",
+      role: "Indian Actor",
       image: "/images/test6.jpg",
-      content: "You can tell it's done with heart. There's a special kind of warmth in everything here.",
+      content: "Not just smooth to use, but emotionally satisfying too. You feel it's made with passion.",
       rating: 5
     },
     {
-      name: "Pradeep Pandey 'Chintu' Ji",
-      role: "Actor",
+      name: "Akash Chopra",
+      role: "Cricket commentator and YouTuber",
       image: "/images/test7.jpg",
-      content: "There's a perfect balance in everything—timing, quality, and professionalism. Really admirable.",
+      content: "Every process, from browsing to booking, feels seamless. That's real user-centric thinking.",
+      rating: 5
+    },
+    {
+      name: "Deepdas Gupta",
+      role: "Indian Cricketer",
+      image: "/images/test8.jpg",
+      content: "The first time I used it, I knew it was different. Everything feels personal and thoughtful.",
+      rating: 5
+    },
+    {
+      name: "Padamjeet Sherawat",
+      role: "Singer",
+      image: "/images/test9.jpg",
+      content: "A much-needed platform that finally understands local needs. It's built with the community in mind.",
+      rating: 5
+    },
+    {
+      name: "Prateek Trivedi",
+      role: "Anchor",
+      image: "/images/test10.jpg",
+      content: "Top-notch experience, and the support team truly listens. That's rare in today's digital space.",
       rating: 5
     }
-  ];
+  ];  
 
   return (
     <section className="py-16 bg-gradient-to-b from-black/5 via-white to-white overflow-hidden">
@@ -66,16 +87,6 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <motion.div 
-            className="inline-block mb-4 px-4 py-1.5 rounded-full border border-yellow-400/30 bg-yellow-500/10"
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            <span className="text-yellow-600 font-medium">What People Say</span>
-          </motion.div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Trusted by <span className="text-yellow-400">Industry Leaders</span>
@@ -128,7 +139,7 @@ const TestimonialsSection = () => {
 
 const MediaLogos = () => {
   const logos = [
-    { src: '/images/media1.jpeg', alt: 'Media Partner 1' }, // Assuming media1 is jpeg
+    { src: '/images/media1.jpeg', alt: 'Media Partner 1' },
     { src: '/images/media2.jpeg', alt: 'Media Partner 2' },
     { src: '/images/media3.jpeg', alt: 'Media Partner 3' },
     { src: '/images/media4.jpeg', alt: 'Media Partner 4' },
@@ -142,7 +153,13 @@ const MediaLogos = () => {
     { src: '/images/media12.png', alt: 'Media Partner 12' },
     { src: '/images/media13.png', alt: 'Media Partner 13' },
     { src: '/images/media14.jpg', alt: 'Media Partner 14' },
-    
+    { src: '/images/media15.webp', alt: 'Media Partner 15' },
+    { src: '/images/media16.jpg', alt: 'Media Partner 16' },
+    { src: '/images/media17.jpg', alt: 'Media Partner 17' },
+    { src: '/images/media18.jpg', alt: 'Media Partner 18' },
+    { src: '/images/media19.jpg', alt: 'Media Partner 19' },
+    { src: '/images/media20.jpg', alt: 'Media Partner 20' },
+    { src: '/images/media21.jpg', alt: 'Media Partner 21' }
   ];
 
   return (
@@ -152,25 +169,25 @@ const MediaLogos = () => {
           As Featured On
         </h3>
         <p className="text-center text-gray-600 text-lg mb-10">
-          Recognized by leading national media outlets for insights and expertise.
+          Recognized by leading national media houses for insights and expertise.
         </p>
-        <div className="relative overflow-hidden">
-          <div className="flex animate-marquee whitespace-nowrap">
+        <div className="testimonials-container p-10 w-full h-full">
+          <div className="smooth-scroll w-full h-full">
             {[...logos, ...logos].map((logo, index) => (
-              <div key={index} className="mx-8 flex-shrink-0">
-                <img 
-                  src={logo.src} 
-                  alt={logo.alt} 
-                  className="h-12 md:h-16 object-contain transition-all duration-300"
-                />
-              </div>
+                <div key={index} className="flex items-center justify-center px-8 w-full h-full">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="w-full h-24"
+                  />
+                </div>
             ))}
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 const CombinedSection = () => {
   return (

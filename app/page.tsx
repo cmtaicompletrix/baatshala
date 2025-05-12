@@ -36,9 +36,9 @@ export default function Home() {
         </section>
 
         {/* Impact Section */}
-        <section id="impact">
+        {/* <section id="impact">
           <ImpactSection />
-        </section>
+        </section> */}
 
         {/* Power Section */}
         <section id="power">
@@ -46,9 +46,9 @@ export default function Home() {
         </section>
 
         {/* Magic Section */}
-        <section id="magic">
+        {/* <section id="magic">
           <MagicSection />
-        </section>
+        </section> */}
 
         {/* Testimonials Section */}
         <section id="testimonials">

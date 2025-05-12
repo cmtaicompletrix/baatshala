@@ -115,7 +115,7 @@ const AboutSection = () => {
       icon: <FaTrophy className="w-6 h-6" />,
       items: [
         "National Level Cricketer - Delhi Under 16 & 19",
-        "Celebrity Cricket League (2014) Player - Bhojpuri Dabanggs owned by Salman Khan",
+        "Celebrity Cricket League (Since 2014) Player - Bhojpuri Dabanggs owned by Salman Khan",
         "Maruti Suzuki Autocross National Racing Champion 2007-8"
       ]
     },
@@ -182,7 +182,9 @@ const AboutSection = () => {
             <span className="text-yellow-600 font-medium">Know More About</span>
           </motion.div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Meet <span className="text-yellow-400">Shailesh Sinha</span>
+            Know the <span className="text-yellow-400">Founder</span>
+            <br />
+            <span className="text-yellow-400">Shailesh Sinha</span>
           </h2>
         </motion.div>
 
