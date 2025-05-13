@@ -15,14 +15,14 @@ const TestimonialsSection = () => {
       name: "Khesari Lal Yadav",
       role: "Singer & Actor",
       image: "/images/test2.jpg",
-      content: "This platform brings a new kind of energy to the rental scene. It's bold, fresh, and exactly what people need.",
+      content: "I have done a superhit film parallel hero with Shailesh bhai, he is a simple and stylish person and he has devoted his life for Society good.  I wish him all luck in his endeavor.",
       rating: 5
     },
     {
       name: "Dinesh Lal Yadav 'Nirahua",
       role: "Actor & MP",
       image: "/images/test3.jpg",
-      content: "From design to delivery, every detail has been thought through. You can feel the mission behind it.",
+      content: "I have done a superhit film parallel hero with Shailesh bhai, he is a simple and stylish person and he has devoted his life for Society good.  I wish him all luck in his endeavor.",
       rating: 5
     },
     {
@@ -34,44 +34,86 @@ const TestimonialsSection = () => {
     },
     {
       name: "Manoj Tiwari",
-      role: "Singer & Politician",
+      role: "Singer & Member of Parliament",
       image: "/images/test5.jpg",
-      content: "The sense of belonging and trust it builds is something special. You feel valued instantly.",
+      content: "I have done a superhit film parallel hero with Shailesh bhai, he is a simple and stylish person and he has devoted his life for Society good.  I wish him all luck in his endeavor.",
       rating: 5
     },
     {
       name: "Gagan Malik",
-      role: "Indian Actor",
+      role: "International Influencer, Actor ( Bhagwan Budha, Shri Ram)",
       image: "/images/test6.jpg",
-      content: "Not just smooth to use, but emotionally satisfying too. You feel it's made with passion.",
+      content: "Shailesh is my very dear friend , A great Anchor a magical speaker , who has the power to enhance any conversation to Top level, Baatshala is great platform,where he will enlighten society through Communication power.",
       rating: 5
     },
     {
       name: "Akash Chopra",
-      role: "Cricket commentator and YouTuber",
+      role: "( Cricket Commentator and Former India Test Player)",
       image: "/images/test7.jpg",
-      content: "Every process, from browsing to booking, feels seamless. That's real user-centric thinking.",
+      content: "Shailesh Sinha is my childhood mate, We played for Delhi cricket team together, he is a Seasoned media professional and an impactful speaker trainer, who is ready to serve society at best.",
       rating: 5
     },
     {
-      name: "Deepdas Gupta",
-      role: "Indian Cricketer",
+      name: "Deep Dasgupta",
+      role: "( Cricket Commentator and Former India Wicketkeeper and Batsman)",
       image: "/images/test8.jpg",
-      content: "The first time I used it, I knew it was different. Everything feels personal and thoughtful.",
+      content: "We have spent childhood together in cricket grounds of Delhi, spent moments of struggle,inspiration and style together. He is a complete media guy with loads of experience to share to society for good.",
       rating: 5
     },
     {
-      name: "Padamjeet Sherawat",
-      role: "Singer",
+      name: "Paramjeet Sehrawat",
+      role:"Sports Commentator and Singer",
       image: "/images/test9.jpg",
-      content: "A much-needed platform that finally understands local needs. It's built with the community in mind.",
+      content: "A Very dignified person with a majestic appeal, he looks good, speaks good and loves giving back to society. He is a Brilliant Orator and country will benefit great from his experience.",
       rating: 5
     },
     {
-      name: "Prateek Trivedi",
-      role: "Anchor",
+      name: "Pratik Trivedi",
+      role: "TV Anchor ( Bhaiyaji Kahin)",
       image: "/images/test10.jpg",
-      content: "Top-notch experience, and the support team truly listens. That's rare in today's digital space.",
+      content: "I know Shailesh Sinha for the last 20 years, A Thorough professional and impactful Speaker who is always available for Society.",
+      rating: 5
+    },
+    {
+      name: "Chelliah Sellamuthu",
+      role: "Director ( NDMC)",
+      image: "/images/test11.jpg",
+      content: "Shailesh is magic when he speaks, he has so much to give to society in the field of communication,  he is an institute in himself of impactful talks. A great trainer and a Brilliant human being.",
+      rating: 5
+    },
+    {
+      name: "Anuj Dayal",
+      role: "Delhi Metro Rail Corporation",
+      image: "/images/test12.jpg",
+      content: "I know Shailesh since 2003 his RED FM days, he is a social person and a prolific speaker, talking on the subject related to traffic safety and management on top Media Channels of India. Wishing him good luck for baatshala.",
+      rating: 5
+    },
+    {
+      name: "Anil Chaudhary",
+      role: "International Cricket Umpire",
+      image: "/images/test13.jpg",
+      content: "Shailesh is a Brilliant Speaker and his actual power is his communication skills and he is going to give great to society with his knowledge of communication through trainings and art of talks delivery.",
+      rating: 5
+    },
+    {
+      name: "Satyaprakash Krishna",
+      role: "( Commentator and Sattu Bhaiya of MS Dhoni)",
+      image: "/images/test14.jpg",
+      content: "One sweetest and most courteous person I know is Shailesh Bhaiya. A Fabulous charismatic human ,who talks brilliant and is always ready to do good to society.",
+      rating: 5
+    },
+    {
+      name: "Akshara Singh",
+      role: "Regionals Films Actor",
+      image: "/images/test15.jpg",
+      content: "Shailesh Sinha is doing great to society through his Organization,  I wish him all the best for his future endeavours.",
+      rating: 5
+    },
+    {
+      name: "M.P. Singh",
+      role: "( Cricket Coach MS Dhoni)",
+      image: "/images/test16.jpg",
+      content: "He is a Sportsman,  an Activist and a superb Orator, who is always ready with infectious  energy of sophistication and powerful communication. He has loads to give to people in the field of Art of Talking.",
       rating: 5
     }
   ];  
