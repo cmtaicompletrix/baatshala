@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
       name: "Dinesh Lal Yadav 'Nirahua",
       role: "Actor & MP",
       image: "/images/test3.jpg",
-      content: "I have done a superhit film parallel hero with Shailesh bhai, he is a simple and stylish person and he has devoted his life for Society good.  I wish him all luck in his endeavor.",
+      content: "Shailesh Sinha is like a brother to me, A very genuine human and always ready for India with his Social work and is a very powerful Speaker and influencer.",
       rating: 5
     },
     {
@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
       name: "Manoj Tiwari",
       role: "Singer & Member of Parliament",
       image: "/images/test5.jpg",
-      content: "I have done a superhit film parallel hero with Shailesh bhai, he is a simple and stylish person and he has devoted his life for Society good.  I wish him all luck in his endeavor.",
+      content: "One of the most talented person I know and is fit into many roles ,  A good cricketer , brilliant actor and is a very powerful speaker debater, you can catch him on TV channels often and now he is training all. Good wishes to his Baatshala.",
       rating: 5
     },
     {

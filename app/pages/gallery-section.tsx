@@ -223,7 +223,72 @@ export default function Gallery() {
       src: '/images/Image44.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
-    }     
+    },     
+    {
+      src: '/images/Image45.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image46.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image47.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image48.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image49.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image50.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image51.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image52.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image53.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image54.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image55.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image56.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image57.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    }
   ];
 
   const videos = [
