@@ -53,7 +53,7 @@ const HeroSection = () => {
               Transform Your Communication Skills
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6">
-              Master the Art of <span className="text-white">बात Shala</span>
+              Master the Art of <span className="text-white">Communication</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
               Years of experience crunched into easy and risk-free courses designed to elevate your communication skills
