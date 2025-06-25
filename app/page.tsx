@@ -8,6 +8,9 @@ import TestimonialsSection from './pages/testimonials-section';
 import BookSession from './pages/book-session';
 import Gallery from './pages/gallery-section';
 import BenefitSection from './pages/benefit-section';
+import ImageConsultancy from './pages/image-consultancy';
+
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -28,6 +31,11 @@ export default function Home() {
         {/* Barriers Section */}
         <section id="barriers">
           <BarriersSection />
+        </section>
+
+        {/* Image Consultancy Section */}
+        <section id="image-consultancy">
+          <ImageConsultancy />
         </section>
 
         {/* Benefits Section */}
