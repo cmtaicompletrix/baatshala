@@ -10,20 +10,30 @@ export default function Gallery() {
 
   const photos = [
     {
-      src: '/images/Image1.jpeg',
-      alt: 'Shailesh Sinha Speaking at Conference',
-      caption: 'Speaking at Communication Summit'
+      src: '/images/Image55.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image49.jpeg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image28.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
     },
     {
       src: '/images/Image2.jpeg',
       alt: 'Workshop Session',
       caption: 'Interactive Workshop with Students'
     },
-    {
-      src: '/images/Image3.jpeg',
-      alt: 'Corporate Training',
-      caption: 'Corporate Communication Training'
-    },
+    // {
+    //   src: '/images/Image3.jpeg',
+    //   alt: 'Corporate Training',
+    //   caption: 'Corporate Communication Training'
+    // },
     {
       src: '/images/Image4.jpeg',
       alt: 'Media Interview',
@@ -59,11 +69,11 @@ export default function Gallery() {
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },
-    {
-      src: '/images/Image11.jpg',
-      alt: 'Media Interview',
-      caption: 'Media Interaction Session'
-    },
+    // {
+    //   src: '/images/Image11.jpg',
+    //   alt: 'Media Interview',
+    //   caption: 'Media Interaction Session'
+    // },
     {
       src: '/images/Image12.jpg',
       alt: 'Media Interview',
@@ -81,6 +91,11 @@ export default function Gallery() {
     },
     {
       src: '/images/Image15.jpg',
+      alt: 'Media Interview',
+      caption: 'Media Interaction Session'
+    },
+    {
+      src: '/images/Image46.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },
@@ -165,11 +180,6 @@ export default function Gallery() {
       caption: 'Media Interaction Session'
     },
     {
-      src: '/images/Image28.jpg',
-      alt: 'Media Interview',
-      caption: 'Media Interaction Session'
-    },
-    {
       src: '/images/Image35.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
@@ -230,22 +240,12 @@ export default function Gallery() {
       caption: 'Media Interaction Session'
     },
     {
-      src: '/images/Image46.jpeg',
-      alt: 'Media Interview',
-      caption: 'Media Interaction Session'
-    },
-    {
       src: '/images/Image47.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },
     {
       src: '/images/Image48.jpeg',
-      alt: 'Media Interview',
-      caption: 'Media Interaction Session'
-    },
-    {
-      src: '/images/Image49.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },
@@ -271,11 +271,6 @@ export default function Gallery() {
     },
     {
       src: '/images/Image54.jpeg',
-      alt: 'Media Interview',
-      caption: 'Media Interaction Session'
-    },
-    {
-      src: '/images/Image55.jpeg',
       alt: 'Media Interview',
       caption: 'Media Interaction Session'
     },

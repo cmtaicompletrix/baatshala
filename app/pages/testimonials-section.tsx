@@ -5,13 +5,6 @@ import { motion } from 'framer-motion';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Pawan Singh",
-      role: "Superstar, Bhojpuri Cinema",
-      image: "/images/test1.jpeg",
-      content: "The professionalism and sincerity I've seen here is unmatched. It's rare to witness such clarity in execution.",
-      rating: 5
-    },
-    {
       name: "Khesari Lal Yadav",
       role: "Singer & Actor",
       image: "/images/test2.jpg",

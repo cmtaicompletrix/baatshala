@@ -205,7 +205,7 @@ const AboutSection = () => {
                     An Economics Graduate from the prestigious Hansraj College, Delhi University, Shailesh Sinha has carved a unique path combining his passion for communication, traffic management, and social impact.
                   </p>
                   <p className="text-lg">
-                    Known as the "Traffic Guru," he pioneered the Traffic News System in India and has been a prominent voice in road safety for over 24 years. His innovative approach to traffic management and road safety has earned him recognition across national media channels and many other platforms.
+                    Known as the "Traffic Guru," he pioneered the Traffic News System in India and has been a prominent voice in road safety for over 25 years. His innovative approach to traffic management and road safety has earned him recognition across national media channels and many other platforms.
                   </p>
                   <p className="text-lg">
                     Beyond his professional achievements, Shailesh is a multifaceted personality excelling in sports as a National Level Cricketer and Maruti Suzuki Autocross Car Racing National Champion. His entertainment career includes notable roles in regional films alongside Manoj Tiwari Ji.

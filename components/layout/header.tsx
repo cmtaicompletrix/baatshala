@@ -153,7 +153,7 @@ const Header = () => {
             whileTap={{ scale: 0.98 }}
             className="hidden md:block flex-shrink-0"
           >
-            <button onClick={() => window.location.href = '#book-session'} className="bg-yellow-500 text-white px-6 py-2 rounded-md text-[15px] font-medium hover:bg-yellow-600 transition-colors whitespace-nowrap">
+            <button onClick={() => window.location.href = '/start-your-journey'} className="bg-yellow-500 text-white px-6 py-2 rounded-md text-[15px] font-medium hover:bg-yellow-600 transition-colors whitespace-nowrap">
               Join Now
             </button>
           </motion.div>
@@ -192,7 +192,7 @@ const Header = () => {
                   whileTap={{ scale: 0.98 }}
                   className="px-4 pt-2"
                 >
-                  <button onClick={() => window.location.href = '#book-session'} className="w-full bg-yellow-500 text-white px-6 py-3 rounded-md text-[15px] font-medium hover:bg-yellow-600 transition-colors">
+                  <button onClick={() => window.location.href = '/start-your-journey'} className="w-full bg-yellow-500 text-white px-6 py-3 rounded-md text-[15px] font-medium hover:bg-yellow-600 transition-colors">
                     Join Now
                   </button>
                 </motion.div>
