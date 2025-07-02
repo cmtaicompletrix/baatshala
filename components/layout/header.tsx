@@ -151,10 +151,27 @@ const Header = () => {
           <motion.div
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="hidden md:block flex-shrink-0"
+            className="hidden md:flex flex-shrink-0 gap-3 items-center"
           >
             <button onClick={() => window.location.href = '/start-your-journey'} className="bg-yellow-500 text-white px-6 py-2 rounded-md text-[15px] font-medium hover:bg-yellow-600 transition-colors whitespace-nowrap">
               Join Now
+            </button>
+            <button
+              onClick={() => window.open('https://ai.baatshala.com', '_blank')}
+              className="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white px-6 py-2 rounded-full text-[15px] font-semibold shadow-lg hover:from-pink-600 hover:to-yellow-500 transition-all duration-200 flex items-center gap-2 border-2 border-transparent hover:border-yellow-400"
+              style={{ boxShadow: '0 4px 16px 0 rgba(234, 179, 8, 0.15)' }}
+            >
+              {/* Movie-style Robot Face Icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="currentColor" strokeWidth="1.5">
+                <rect x="4" y="7" width="16" height="10" rx="5" fill="#fff" stroke="#a78bfa" strokeWidth="1.5"/>
+                <circle cx="8.5" cy="12" r="1.5" fill="#a78bfa" />
+                <circle cx="15.5" cy="12" r="1.5" fill="#a78bfa" />
+                <rect x="10.5" y="15" width="3" height="1" rx="0.5" fill="#a78bfa" />
+                <rect x="11.25" y="4" width="1.5" height="3" rx="0.75" fill="#a78bfa" />
+                <rect x="3" y="10.5" width="1.5" height="3" rx="0.75" fill="#a78bfa" />
+                <rect x="19.5" y="10.5" width="1.5" height="3" rx="0.75" fill="#a78bfa" />
+              </svg>
+              Baatshala AI
             </button>
           </motion.div>
         </div>
@@ -190,10 +207,27 @@ const Header = () => {
                 ))}
                 <motion.div
                   whileTap={{ scale: 0.98 }}
-                  className="px-4 pt-2"
+                  className="px-4 pt-2 flex flex-col gap-3"
                 >
                   <button onClick={() => window.location.href = '/start-your-journey'} className="w-full bg-yellow-500 text-white px-6 py-3 rounded-md text-[15px] font-medium hover:bg-yellow-600 transition-colors">
                     Join Now
+                  </button>
+                  <button
+                    onClick={() => window.open('https://ai.baatshala.com', '_blank')}
+                    className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white px-6 py-3 rounded-full text-[15px] font-semibold shadow-lg hover:from-pink-600 hover:to-yellow-500 transition-all duration-200 flex items-center justify-center gap-2 border-2 border-transparent hover:border-yellow-400 mt-1"
+                    style={{ boxShadow: '0 4px 16px 0 rgba(234, 179, 8, 0.15)' }}
+                  >
+                    {/* Movie-style Robot Face Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-5 h-5" stroke="currentColor" strokeWidth="1.5">
+                      <rect x="4" y="7" width="16" height="10" rx="5" fill="#fff" stroke="#a78bfa" strokeWidth="1.5"/>
+                      <circle cx="8.5" cy="12" r="1.5" fill="#a78bfa" />
+                      <circle cx="15.5" cy="12" r="1.5" fill="#a78bfa" />
+                      <rect x="10.5" y="15" width="3" height="1" rx="0.5" fill="#a78bfa" />
+                      <rect x="11.25" y="4" width="1.5" height="3" rx="0.75" fill="#a78bfa" />
+                      <rect x="3" y="10.5" width="1.5" height="3" rx="0.75" fill="#a78bfa" />
+                      <rect x="19.5" y="10.5" width="1.5" height="3" rx="0.75" fill="#a78bfa" />
+                    </svg>
+                    Baatshala AI
                   </button>
                 </motion.div>
               </nav>
