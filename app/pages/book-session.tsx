@@ -55,7 +55,7 @@ const BookSession = () => {
   */
 
   // Fixed price for direct booking
-  const FIXED_PRICE = 1999;
+  const FIXED_PRICE = 199;
 
   useEffect(() => {
     if (window.Razorpay) {
