@@ -222,7 +222,7 @@ const BookSession = () => {
           </motion.div>
 
           {/* Package Selection */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -273,7 +273,7 @@ const BookSession = () => {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Responsive 2-column layout */}
           <div className="flex flex-col md:flex-row gap-10 items-start">
