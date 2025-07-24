@@ -24,9 +24,11 @@ const BookSession = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [paymentProcessing, setPaymentProcessing] = useState(false);
-  const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
+  // const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
   const [isRazorpayLoaded, setIsRazorpayLoaded] = useState(false);
 
+  // Commenting out packages array as it's not needed anymore
+  /*
   const packages = [
     {
       id: 'basic',
@@ -50,6 +52,10 @@ const BookSession = () => {
       features: ['Complete image overhaul', 'Personalized wardrobe planning', '3 in-person sessions', '90-day support', 'Digital style lookbook']
     }
   ];
+  */
+
+  // Fixed price for direct booking
+  const FIXED_PRICE = 1999;
 
   useEffect(() => {
     if (window.Razorpay) {
@@ -63,38 +69,29 @@ const BookSession = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!selectedPackage) {
-      alert('Please select a package before proceeding');
-      return;
-    }
-
     setIsSubmitting(true);
 
     // Simulate API call to prepare order
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    // Get selected package details
-    const packageDetails = packages.find(pkg => pkg.id === selectedPackage);
-    
-    if (packageDetails && isRazorpayLoaded) {
-      initiatePayment(packageDetails);
+    if (isRazorpayLoaded) {
+      initiatePayment();
     } else {
       alert('Payment gateway is not loaded. Please try again.');
       setIsSubmitting(false);
     }
   };
 
-  const initiatePayment = (packageDetails: typeof packages[0]) => {
+  const initiatePayment = () => {
     setPaymentProcessing(true);
     
     // Create a new Razorpay instance
     const options = {
       key: 'rzp_test_yourkeyhere', // Replace with your actual Razorpay key
-      amount: packageDetails.price * 100, // Amount in paise
+      amount: FIXED_PRICE * 100, // Amount in paise
       currency: 'INR',
       name: 'Baatshala Image Consultancy',
-      description: `Booking for ${packageDetails.name}`,
+      description: 'Booking for Consultation Session',
       image: '/logo.png', // Add your logo URL
       handler: function(response: any) {
         // Handle successful payment
@@ -109,8 +106,7 @@ const BookSession = () => {
       notes: {
         sessionType: formData.sessionType,
         preferredDate: formData.preferredDate,
-        message: formData.message,
-        packageId: packageDetails.id
+        message: formData.message
       },
       theme: {
         color: '#EAB308' // Yellow color matching your theme
@@ -140,8 +136,7 @@ const BookSession = () => {
     
     console.log('Booking data:', {
       ...formData,
-      paymentId: response.razorpay_payment_id,
-      packageSelected: selectedPackage
+      paymentId: response.razorpay_payment_id
     });
     
     // Simulate API call
@@ -159,9 +154,9 @@ const BookSession = () => {
     }));
   };
 
-  const handlePackageSelect = (packageId: string) => {
-    setSelectedPackage(packageId);
-  };
+  // const handlePackageSelect = (packageId: string) => {
+  //   setSelectedPackage(packageId);
+  // };
 
   if (submitted) {
     return (
@@ -217,11 +212,12 @@ const BookSession = () => {
               Start Your <span className="text-yellow-400">Image Transformation</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Choose your preferred package and let us help you transform your professional image.
+              Book your consultation session with us and transform your professional image.
             </p>
           </motion.div>
 
-          {/* Package Selection */}
+          {/* Commenting out Package Selection Section */}
+          {/*
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -274,8 +270,9 @@ const BookSession = () => {
               ))}
             </div>
           </motion.div>
+          */}
 
-          {/* Responsive 2-column layout */}
+          {/* Rest of the form code remains the same */}
           <div className="flex flex-col md:flex-row gap-10 items-start">
             {/* Contact Info */}
             <motion.div 
@@ -400,9 +397,9 @@ const BookSession = () => {
 
               <button
                 type="submit"
-                disabled={isSubmitting || !selectedPackage}
+                disabled={isSubmitting}
                 className={`w-full py-3 rounded-lg font-medium text-lg transition-all flex items-center justify-center gap-2 ${
-                  isSubmitting || !selectedPackage
+                  isSubmitting
                     ? 'bg-gray-100 text-gray-500 cursor-not-allowed'
                     : 'bg-yellow-400 text-gray-900 hover:bg-yellow-500'
                 }`}
@@ -417,21 +414,18 @@ const BookSession = () => {
                   </>
                 ) : (
                   <>
-                    Pay & Book Session
-                    {selectedPackage && (
-                      <span className="ml-1">
-                        (₹{packages.find(pkg => pkg.id === selectedPackage)?.price})
-                      </span>
-                    )}
+                    Pay & Book Session (₹{FIXED_PRICE})
                   </>
                 )}
               </button>
               
+              {/*
               {!selectedPackage && (
                 <p className="text-center text-yellow-600 mt-3 text-sm">
                   Please select a package above to proceed
                 </p>
               )}
+              */}
               
               <div className="flex items-center justify-center mt-6">
                 <img src="/razorpay-logo.png" alt="Razorpay" className="h-6 opacity-70" />
